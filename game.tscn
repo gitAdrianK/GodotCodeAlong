@@ -31,7 +31,6 @@ grow_vertical = 2
 mouse_filter = 2
 
 [node name="Playingfield" parent="Elements" instance=ExtResource("1_oafh4")]
-layout_mode = 1
 
 [node name="Hand" parent="Elements" instance=ExtResource("2_2rlo1")]
 layout_mode = 1

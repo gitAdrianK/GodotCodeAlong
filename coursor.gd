@@ -1,3 +1,4 @@
+class_name Coursor
 extends Control
 
 # When a domino gets clicked reparent it to coursor
@@ -8,6 +9,7 @@ extends Control
 
 func add_child_to_coursor(node):
 	self.add_child(node)
+
 
 func reparent_to_coursor(node):
 	node.reparent(self)
