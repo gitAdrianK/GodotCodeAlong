@@ -1,0 +1,51 @@
+[gd_scene load_steps=5 format=3 uid="uid://dldhdg82guouo"]
+
+[ext_resource type="Script" path="res://game.gd" id="1_8fjxj"]
+[ext_resource type="PackedScene" uid="uid://dyg3ua06dwdna" path="res://playingfield.tscn" id="1_oafh4"]
+[ext_resource type="PackedScene" uid="uid://db22h0vcrcgae" path="res://hand.tscn" id="2_2rlo1"]
+[ext_resource type="PackedScene" uid="uid://cqjitqjy6rn4y" path="res://coursor.tscn" id="3_er8ys"]
+
+[node name="Game" type="Node2D"]
+script = ExtResource("1_8fjxj")
+
+[node name="Background" type="ColorRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 1920.0
+offset_bottom = 1080.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0.0627451, 0.415686, 0.2, 1)
+
+[node name="Elements" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 1920.0
+offset_bottom = 1080.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="Playingfield" parent="Elements" instance=ExtResource("1_oafh4")]
+layout_mode = 1
+
+[node name="Hand" parent="Elements" instance=ExtResource("2_2rlo1")]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -400.0
+offset_top = -250.0
+offset_right = 400.0
+offset_bottom = 0.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="Coursor" parent="Elements" instance=ExtResource("3_er8ys")]
+mouse_filter = 1

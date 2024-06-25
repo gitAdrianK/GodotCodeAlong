@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://cqjitqjy6rn4y"]
+
+[ext_resource type="Script" path="res://coursor.gd" id="1_hs0d3"]
+
+[node name="Coursor" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_hs0d3")
