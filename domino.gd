@@ -1,10 +1,10 @@
 class_name Domino
 extends Control
 
-signal domino_clicked(domino)
+signal domino_clicked(domino : Domino)
 # Not doing anything with the released signal yet,
 # probably want to connect it with the coursor though.
-signal domino_released(domino)
+signal domino_released(domino : Domino)
 
 @onready var _top := $HBoxContainer/VBoxContainer/TopLabel
 @onready var _bottom := $HBoxContainer/VBoxContainer/BottomLabel

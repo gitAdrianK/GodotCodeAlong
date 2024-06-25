@@ -54,10 +54,18 @@ text = "TOP"
 horizontal_alignment = 1
 vertical_alignment = 1
 
+[node name="TopCenterMargin" type="MarginContainer" parent="HBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
 [node name="Divider" type="ColorRect" parent="HBoxContainer/VBoxContainer"]
 custom_minimum_size = Vector2(33, 2)
 layout_mode = 2
 color = Color(0, 0, 0, 1)
+
+[node name="BottomCenterMargin" type="MarginContainer" parent="HBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
 
 [node name="BottomLabel" type="Label" parent="HBoxContainer/VBoxContainer"]
 layout_mode = 2

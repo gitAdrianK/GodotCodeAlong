@@ -7,9 +7,9 @@ extends Control
 # Reparent it to the hand if released on top of the hand
 # Otherwise something something playingfield
 
-func add_child_to_coursor(node):
+func add_child_to_coursor(node : Node):
 	self.add_child(node)
 
 
-func reparent_to_coursor(node):
+func reparent_to_coursor(node : Node):
 	node.reparent(self)
