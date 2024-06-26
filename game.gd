@@ -11,7 +11,7 @@ const Domino := preload("res://domino.tscn")
 func _ready():
 	for i in range(6):
 		var instance := Domino.instantiate()
-		_hand.add_child_to_hand(instance)
+		_hand.add_domino_to_hand(instance)
 		instance.set_top(_rng.randi_range(0,6))
 		instance.set_bottom(_rng.randi_range(0,6))
 		instance.connect("domino_clicked", _on_domino_clicked)
