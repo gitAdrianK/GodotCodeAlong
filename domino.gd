@@ -21,6 +21,8 @@ func _on_area_2d_input_event(_viewport, event, _shape_idx):
 	if event.button_index == MOUSE_BUTTON_MASK_LEFT:
 		if not _is_mouse_down:
 			emit_signal("domino_clicked", self)
+		else:
+			emit_signal("domino_released", self)
 		_is_mouse_down = not _is_mouse_down
 
 
