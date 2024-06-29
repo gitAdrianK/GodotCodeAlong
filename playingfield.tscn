@@ -1,5 +1,8 @@
-[gd_scene format=3 uid="uid://dyg3ua06dwdna"]
+[gd_scene load_steps=2 format=3 uid="uid://dyg3ua06dwdna"]
+
+[ext_resource type="Script" path="res://playingfield.gd" id="1_7xurm"]
 
 [node name="Playingfield" type="Control"]
 layout_mode = 3
 anchors_preset = 0
+script = ExtResource("1_7xurm")
