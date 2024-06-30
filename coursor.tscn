@@ -6,3 +6,5 @@
 layout_mode = 3
 anchors_preset = 0
 script = ExtResource("1_hs0d3")
+
+[node name="HeldDomino" type="Node" parent="."]

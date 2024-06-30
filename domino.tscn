@@ -10,7 +10,7 @@ layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 80.0
-pivot_offset = Vector2(25, 45)
+pivot_offset = Vector2(20, 40)
 mouse_filter = 2
 script = ExtResource("1_q36dc")
 
